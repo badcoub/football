@@ -6,7 +6,8 @@
    let facebook_bot1 = 'facebookexternalhit/1.1';
    let facebook_bot2 = 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)';
    let language = navigator.browserLanguage;
-   alert(language);
+   var userLang = navigator.language || navigator.userLanguage;
+   alert(userLang);
 </script>
 </head>
 <body>
